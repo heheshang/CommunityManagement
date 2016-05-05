@@ -1,0 +1,16 @@
+{% extends 'website/frontend_base.html' %}
+
+{% block title %}
+    {{ COMMUNITY_NAME }}
+{% endblock %}
+
+{% block left %}
+    <div class="row">
+        <div class="col-md-6">
+            {% include 'article/article_weight.html' %}
+        </div>
+        <div class="col-md-6">
+            {% include 'activity/activity_weight.html' %}
+        </div>
+    </div>
+{% endblock %}
