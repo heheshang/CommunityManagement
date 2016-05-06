@@ -25,7 +25,7 @@ class MyUser(models.Model):
     is_admin = models.BooleanField(default=False)
     user = models.OneToOneField(User)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -33,5 +33,5 @@ class Department(models.Model):
     name = models.CharField(max_length=128)
     user = models.ManyToManyField(User)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name

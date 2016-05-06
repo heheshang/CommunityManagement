@@ -12,5 +12,5 @@ class NavItem(models.Model):
         verbose_name_plural = verbose_name = u'导航条'
         ordering = ['show_order', '-create_time']
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
