@@ -16,7 +16,7 @@ class Activity(models.Model):
     is_alternative = models.BooleanField(default=False)
     alternative_title = models.CharField(max_length=128, blank=True, null=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
 
@@ -34,7 +34,7 @@ class Actor(models.Model):
 
     activity = models.ForeignKey(Activity)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -48,7 +48,7 @@ class Task(models.Model):
 
     activity = models.ForeignKey(Activity)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
